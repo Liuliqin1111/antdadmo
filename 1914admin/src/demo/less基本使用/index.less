@@ -1,0 +1,24 @@
+@import  url('../../style/index.less');
+@color:#666;
+
+.less{
+  
+  // background:@color*2;
+
+  .test(@w,@h){
+    width: unit(@w,px);
+    height: unit(@h,px);
+  }
+  // unit(1,px)  1px 
+  h3{
+    color: pink;
+  }
+  .son1{
+   .test(50,50);
+    background:@themeColor;
+  }
+  .son2{
+    .test(100,100);
+    background: blue;
+  }
+}
